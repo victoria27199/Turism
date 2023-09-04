@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+ /* start reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --while-color: #fff;
+    --green-color: rgb(234, 248, 233); 
+    --black-color: #000;
+}
+/* end reset */
+
+.container-fluid{
+    width: 100%;
+    position: relative;
+}
+.hero{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* pentru scoll-ul lateral  */
+}
+.hero .front-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    z-index: 1;
+}
+.container{
+    font-size: 100px;
+    color: var(--black-color);
+    position: relative;
+    z-index: 3;
+    width: 100%; /* pentru partea de responsive */
+    max-width: 1180px;
+    margin: auto;
+}
+/* .overlay{
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.2);
+} */
+.nav-bar{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+}
+.header-logo{
+ width: 8rem;
+ 
+}
+.links{
+    font-size: 2rem;
+    color:var(--black-color);
+    flex: 1;
+    flex-direction: row;
+    padding: 1rem;
+    gap: 1rem;
+}
+.go-withUs{
+    font-size: 2rem;
+    width: 12rem;
+    border: 1px solid  black;
+    text-align: center;
+}
+h1{
+    font-size: 2rem;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.center-height{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.containe.row h1{
+    justify-content: center;
+    text-align: center;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 33.333%;
+}
+.img{
+    display: block;
+    max-width: 100%;
+} 
+.title{
+    color: var(--black-color);
+    justify-content: center;
+    /* text-transform: uppercase; */
+    justify-content: center;
+    margin: auto;
+    margin-top: 6rem;
+}
+.front-img{
+    border-radius: 2rem; 
+    padding: 1rem;
+}
+.blog-img{
+    border-radius: 3rem;
+    font-size: 4rem;
+}
+.blog-content{
+    padding: 2rem;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--while-color);
+    padding: 0.2rem;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0; /* Textul va fi ascuns initial */
+    transition: opacity 0.3s ease-in-out;
+}
+.image-container:hover .image-text {
+    opacity: 1; /* textul va aparea dupa :hover */
+}
+
+.newsletter{
+    background-color: var(--green-color);
+    border-radius: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+.newsletter-form{
+color: red;
+}
+
+
+
+
+
+/* newslatter */
+/* .newsletter {
+    margin-top: 1rem;
+    background: rgb(234, 248, 233);
+    font-size: 1rem;
+} */
+
+
+/* responsive  NU*/
+/* @media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: blue;
+    }
+}
+@media screen and (min-width: 816px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+} */

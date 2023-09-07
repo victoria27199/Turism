@@ -32,7 +32,10 @@ a{
     overflow: hidden; /* pentru scoll-ul lateral  */
 }
 .hero-front-index{
-    background: url(../img/front-img.jpg);
+    background-image: url(../img/front-img.jpg);
+    background-size: cover;
+    background-position: center;
+
 }
 .description{
     font-weight: 400;
@@ -102,6 +105,14 @@ p{
     display: flex;
     flex-wrap: wrap;
     padding: 12px;
+}
+.header{
+    position: relative;
+    z-index: 4;
+}
+.img-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .col-2{
@@ -214,3 +225,15 @@ font-size: 0.9rem;
     background-color: pink;
 }
 
+@media (max-width: 600px){
+    .img-row{
+        grid-template-columns: auto;
+    }
+}
+
+/* @media(max-width: 800px){
+    .img-row{
+        background-color: red;
+    }
+    
+} */

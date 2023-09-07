@@ -17,6 +17,7 @@ a{
     --while-color: #fff;
     --green-color: rgb(234, 248, 233); 
     --black-color: #000;
+    --linkedin-color: #0077B5;
 
 }
 /* end reset */
@@ -37,13 +38,13 @@ a{
     font-weight: 400;
 }
 .container{
-    /* font-size: 100px; */
     color: var(--black-color);
-    /* position: relative; */
+    position: relative;
     z-index: 3;
     width: 100%; /* pentru partea de responsive */
     max-width: 1180px;
     margin: auto;
+    padding: 0.3rem;
 }
 .overlay{
     position: absolute;
@@ -140,24 +141,14 @@ p{
 .blog-content{
     padding: 2rem;
 }
-
 .image-container {
     position: relative;
 }
 .title-expedition{
-    vertical-align: baseline; 
+   text-align: center;
+   color: red;
+   font-size: 100px;
 }
-.alta-img{
-    margin: 0;
-    
-}
-
-/* background: transparent;
-    border: 0;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline; */
 
 .image-text {
     position: absolute;
@@ -181,9 +172,7 @@ p{
     justify-content: center;
     text-align: center;
 }
-/* .newsletter-form{
-color: red;
-} */
+
 .other-font{
 font-family: cursive;
 font-size: 0.9rem;
@@ -201,7 +190,16 @@ font-size: 0.9rem;
 }
 .icons{
     justify-content: center;
+    padding: 1rem;
+    font-size: 2rem;
 }
+.fa{
+    margin: 10px;
+}
+.fa-linkedin-square{
+    color: var(--linkedin-color);
+}
+
 .go-to-exeditiond{
     border: 1px solid black;
     margin: auto;
@@ -213,4 +211,6 @@ font-size: 0.9rem;
     border: 1px solid black;
     justify-content: center;
     text-align: center;
+    background-color: pink;
 }
+

@@ -19,6 +19,8 @@ a{
     --linkedin-color: #0077B5;
     --line-color: #808080;
     --buttons-color: #FAC898;
+    --red-color: #FF0000;
+    /* sa vad daca le voi folosi - culorile */
 }
 /* end reset */
 
@@ -137,18 +139,12 @@ p{
     border-radius: 2rem; 
     padding: 1rem;
 }
-.blog-img{
-    border-radius: 3rem;
-    font-size: 4rem;
-}
-.blog-content{
-    padding: 2rem;
-}
 .image-container {
     position: relative;
 }
-.title-expedition{
-   text-align: center;
+.img-expedition-iceland{
+    background-image: url(../img/Iceland/iceland-front-img.jpg);
+    margin: 0;
 }
 .go-withUs{
     font-size: 2rem;
@@ -218,6 +214,7 @@ font-size: 0.9rem;
 }
 .fa{
     margin: 10px;
+   align-items: center;
 }
 .fa-linkedin-square{
     color: var(--linkedin-color);
@@ -229,13 +226,20 @@ font-size: 0.9rem;
     padding: 1rem;
     background: var(--buttons-color);
 }
+.center{
+    text-align: center;
+    margin: auto;
+    
+}
+
 
 /* partea de content */
 .content{
     border: 1px solid var(--black-color);
-    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    /* justify-content: center;
     text-align: center;
-    background-color: pink;
+    background-color: pink; */
 }
 
 
@@ -256,14 +260,31 @@ font-size: 0.9rem;
         align-items: center;
         flex-direction: column;
     }
+    .line{
+        width: auto;
+    }
+    
+    .row-info {
+        flex-direction: column; 
+        text-align: center;
+        margin: auto;
+    }
+
+    .col-4 {
+        flex: none;
+        width: 100%; 
+    }
+    .col-2{
+        flex: none;
+        width: 100%;
+    }
+
 }
 
-@media(max-width: 750px) {
-    /* .img-row{
-        background-color: red;
+@media(max-width: 700px) {
+    .col-2{
+        flex: none;
+        width: 100%;
     }
-     */
-     /* .hnav-bar{
-        flex-direction: column;
-     } */
+    
 }

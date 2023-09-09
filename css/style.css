@@ -13,12 +13,12 @@ a{
     color: var(--black-color);
 }
 :root{
-    --container-color: #fafafa; /* /de verificat daca o voi folosi */
     --while-color: #fff;
     --green-color: rgb(234, 248, 233); 
     --black-color: #000;
     --linkedin-color: #0077B5;
-
+    --line-color: #808080;
+    --buttons-color: #FAC898;
 }
 /* end reset */
 
@@ -28,14 +28,14 @@ a{
 }
 .hero{
     height: 100vh;
-    width: 100%; /* trebuie de modificat in 100% */
+    width: 100%; 
     overflow: hidden; /* pentru scoll-ul lateral  */
 }
 .hero-front-index{
     background-image: url(../img/front-img.jpg);
     background-size: cover;
     background-position: center;
-
+    filter: brightness(0.7) saturate(1); /* face ca imaginea sa fie mai inchisa la culoare */
 }
 .description{
     font-weight: 400;
@@ -77,12 +77,6 @@ a{
     padding: 1rem;
     gap: 1rem;
 }
-.go-withUs{
-    font-size: 2rem;
-    width: 12rem;
-    border: 1px solid  black;
-    text-align: center;
-}
 h1{
     font-size: 2rem;
     line-height: 1.2em;
@@ -114,7 +108,6 @@ p{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-
 .col-2{
     width: 50%;
 }
@@ -136,7 +129,6 @@ p{
 .title{
     color: var(--black-color);
     justify-content: center;
-    /* text-transform: uppercase; */
     justify-content: center;
     margin: auto;
     margin-top: 6rem;
@@ -157,10 +149,21 @@ p{
 }
 .title-expedition{
    text-align: center;
-   color: red;
-   font-size: 100px;
 }
-
+.go-withUs{
+    font-size: 2rem;
+    width: 15rem;
+    padding: auto;
+    margin: auto;
+}
+.go-to-contact{
+    background-color: var(--while-color);
+    font-weight: 400;
+    border-radius: 0.5rem;
+    box-shadow: 12px 12px 2px 1px rgba(57, 57, 65, 0.2);
+    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+}
 .image-text {
     position: absolute;
     top: 50%;
@@ -176,21 +179,30 @@ p{
 .image-container:hover .image-text {
     opacity: 1; /* textul va aparea dupa :hover */
 }
-
 .newsletter{
     background-color: var(--green-color);
     border-radius: 2rem;
     justify-content: center;
     text-align: center;
 }
-
+.newsletter-form{
+    padding: 1.5rem;
+}
+.input{
+border-radius: 0.3rem;
+}
+.submit{
+    border-radius: 0.3rem ;
+}
 .other-font{
-font-family: cursive;
+font-family: 'Work Sans', sans-serif;
 font-size: 0.9rem;
 }
-
+.other-font:hover{
+    color: var(--buttons-color);
+}
 .line{
-    border: 1px solid black;
+    border: 1px solid var(--line-color);
 }
 .footer {
     padding: 1rem;
@@ -212,28 +224,46 @@ font-size: 0.9rem;
 }
 
 .go-to-exeditiond{
-    border: 1px solid black;
+    border: 1px solid var(--black-color);
     margin: auto;
     padding: 1rem;
-    background: orange;
+    background: var(--buttons-color);
 }
+
 /* partea de content */
 .content{
-    border: 1px solid black;
+    border: 1px solid var(--black-color);
     justify-content: center;
     text-align: center;
     background-color: pink;
 }
 
-@media (max-width: 600px){
+
+
+
+
+
+
+@media (max-width: 600px) {  
     .img-row{
         grid-template-columns: auto;
     }
+    .center-height {
+        justify-content: center;
+    }
+    .media-go{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
-/* @media(max-width: 800px){
-    .img-row{
+@media(max-width: 750px) {
+    /* .img-row{
         background-color: red;
     }
-    
-} */
+     */
+     /* .hnav-bar{
+        flex-direction: column;
+     } */
+}

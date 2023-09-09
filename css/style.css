@@ -146,6 +146,10 @@ p{
     background-image: url(../img/Iceland/iceland-front-img.jpg);
     margin: 0;
 }
+.img-expedition-japan{
+    background-image: url(../img/Japan/japan_front_img.jpg);
+    margin: 0;
+}
 .go-withUs{
     font-size: 2rem;
     width: 15rem;
@@ -229,21 +233,12 @@ font-size: 0.9rem;
 .center{
     text-align: center;
     margin: auto;
-    
 }
 
-
-/* partea de content */
 .content{
     border: 1px solid var(--black-color);
     font-family: 'Playfair Display', serif;
-    /* justify-content: center;
-    text-align: center;
-    background-color: pink; */
 }
-
-
-
 
 
 

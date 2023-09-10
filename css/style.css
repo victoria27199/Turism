@@ -150,6 +150,12 @@ p{
     background-image: url(../img/Japan/japan_front_img.jpg);
     margin: 0;
 }
+.img-expedition-new-zeeland{
+    background-image: url(../img/NewZeeland/new_zeeland_front_img.jpg);
+}
+.img-expedition-marocco{
+    background-image: url(../img/Marocco/marocco-front-img.jpg);
+}
 .go-withUs{
     font-size: 2rem;
     width: 15rem;
@@ -244,6 +250,9 @@ font-size: 0.9rem;
 
 
 @media (max-width: 600px) {  
+    .nav-bar{
+       
+    }
     .img-row{
         grid-template-columns: auto;
     }
@@ -268,7 +277,10 @@ font-size: 0.9rem;
     .col-4 {
         flex: none;
         width: 100%; 
-    }
+        /* text-align: center;
+        margin: auto;
+    */
+}
     .col-2{
         flex: none;
         width: 100%;
@@ -276,10 +288,11 @@ font-size: 0.9rem;
 
 }
 
-@media(max-width: 700px) {
+@media(min-width: 700px) and (max-width:1184px) {
     .col-2{
         flex: none;
         width: 100%;
+        padding: 1rem;
     }
     
 }

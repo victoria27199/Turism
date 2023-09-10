@@ -39,6 +39,10 @@ a{
     background-position: center;
     filter: brightness(0.7) saturate(1); /* face ca imaginea sa fie mai inchisa la culoare */
 }
+section{
+    margin: 2rem;
+    padding: 2rem;
+}
 .description{
     font-weight: 400;
 }
@@ -144,20 +148,18 @@ p{
 }
 .img-expedition-iceland{
     background-image: url(../img/Iceland/iceland-front-img.jpg);
-    margin: 0;
 }
 .img-expedition-japan{
     background-image: url(../img/Japan/japan_front_img.jpg);
-    margin: 0;
 }
 .img-expedition-new-zeeland{
     background-image: url(../img/NewZeeland/new_zeeland_front_img.jpg);
 }
 .img-expedition-marocco{
-    background-image: url(../img/Jordan/jordan-front-img.jpg);
+    background-image: url(../img/Marocco/marocco-front-img.jpg);
 }
 .img-expedition-jordan{
-
+    background-image: url(../img/Jordan/jordan-front-img.jpg);
 }
 .go-withUs{
     font-size: 2rem;
@@ -249,13 +251,13 @@ font-size: 0.9rem;
     font-family: 'Playfair Display', serif;
 }
 
-
+/* contact page */
+#map{
+    height: 400px;
+}
 
 
 @media (max-width: 600px) {  
-    .nav-bar{
-       
-    }
     .img-row{
         grid-template-columns: auto;
     }

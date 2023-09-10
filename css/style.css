@@ -154,7 +154,10 @@ p{
     background-image: url(../img/NewZeeland/new_zeeland_front_img.jpg);
 }
 .img-expedition-marocco{
-    background-image: url(../img/Marocco/marocco-front-img.jpg);
+    background-image: url(../img/Jordan/jordan-front-img.jpg);
+}
+.img-expedition-jordan{
+
 }
 .go-withUs{
     font-size: 2rem;

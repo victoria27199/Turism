@@ -19,8 +19,6 @@ a{
     --linkedin-color: #0077B5;
     --line-color: #808080;
     --buttons-color: #FAC898;
-    --red-color: #FF0000;
-    /* sa vad daca le voi folosi - culorile */
 }
 /* end reset */
 
@@ -30,7 +28,7 @@ a{
 }
 .hero{
     height: 100vh;
-    width: 100%; 
+    width: 100%;  
     overflow: hidden; /* pentru scoll-ul lateral  */
 }
 .hero-front-index{
@@ -50,7 +48,7 @@ section{
     color: var(--black-color);
     position: relative;
     z-index: 3;
-    width: 100%; /* pentru partea de responsive */
+    width: 100%; 
     max-width: 1180px;
     margin: auto;
     padding: 0.3rem;
@@ -72,7 +70,7 @@ section{
     justify-content: center;
 }
 .header-logo{
- width: 8rem;
+    width: 8rem;
  
 }
 .links{
@@ -138,6 +136,7 @@ p{
     justify-content: center;
     margin: auto;
     margin-top: 6rem;
+    padding: 1.5rem;
 }
 .front-img{
     border-radius: 2rem; 
@@ -200,14 +199,14 @@ p{
     padding: 1.5rem;
 }
 .input{
-border-radius: 0.3rem;
+    border-radius: 0.3rem;
 }
 .submit{
     border-radius: 0.3rem ;
 }
 .other-font{
-font-family: 'Work Sans', sans-serif;
-font-size: 0.9rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.9rem;
 }
 .other-font:hover{
     color: var(--buttons-color);
@@ -229,12 +228,11 @@ font-size: 0.9rem;
 }
 .fa{
     margin: 10px;
-   align-items: center;
+    align-items: center;
 }
 .fa-linkedin-square{
     color: var(--linkedin-color);
 }
-
 .go-to-exeditiond{
     border: 1px solid var(--black-color);
     margin: auto;
@@ -248,15 +246,12 @@ font-size: 0.9rem;
 
 .content{
     border: 1px solid var(--black-color);
+    box-shadow: 10px 5px 5px var(--buttons-color);
     font-family: 'Playfair Display', serif;
 }
-
-/* contact page */
 #map{
     height: 400px;
 }
-
-
 @media (max-width: 600px) {  
     .img-row{
         grid-template-columns: auto;
@@ -278,21 +273,30 @@ font-size: 0.9rem;
         text-align: center;
         margin: auto;
     }
-
     .col-4 {
         flex: none;
         width: 100%; 
-        /* text-align: center;
-        margin: auto;
-    */
 }
     .col-2{
         flex: none;
         width: 100%;
     }
-
+    .line{
+        width: 100%;
+        margin: auto;
+    }
+    .nav-bar{
+        align-items: center;
+        flex-direction: column;
+    }
+    .title{
+        align-items: center;
+        justify-content: center;
+    }
+    .content{
+        box-shadow: 10px 5px 5px 10px var(--buttons-color);
+    }
 }
-
 @media(min-width: 700px) and (max-width:1184px) {
     .col-2{
         flex: none;
